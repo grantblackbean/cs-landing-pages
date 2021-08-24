@@ -195,6 +195,7 @@
         for (let i = 0; i < pageLinks.length; i++){
             link = pageLinks[i]
             link.addEventListener("click", function(e){
+                e.preventDefault()
                 ga('send', 'event', 'Conversion', 'Click', 'ClickThrough')
                 console.log('link click!')
             })
