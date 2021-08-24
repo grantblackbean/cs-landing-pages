@@ -196,7 +196,9 @@
             link = pageLinks[i]
             link.addEventListener("click", function(e){
                 e.preventDefault()
-                ga('send', 'event', 'Conversion', 'Click', 'ClickThrough')
+                gtag('event', 'Click', { 'event_category': 'Conversion',
+                                        'event_label' : 'ClickThrough'
+            })
                 console.log('link click!')
             })
         }
