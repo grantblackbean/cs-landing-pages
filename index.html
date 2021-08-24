@@ -195,7 +195,6 @@
         for (let i = 0; i < pageLinks.length; i++){
             link = pageLinks[i]
             link.addEventListener("click", function(e){
-                e.preventDefault()
                 gtag('event', 'Click', { 'event_category': 'Conversion',
                                         'event_label' : 'ClickThrough'
             })
